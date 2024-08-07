@@ -70,12 +70,21 @@ function opentab(tabname) {
 
 // For hamberger button
 var sidemenu = document.getElementById("side-menu");
+var hamburger = document.getElementById("hamburger");
+
+hamburger.addEventListener("click", openmenu);
+closeIcon.addEventListener("click", closemenu);
+
 function openmenu() {
     sidemenu.style.right = "0";
+    hamburger.style.display = "none";
 }
+
 function closemenu() {
     sidemenu.style.right = "-200px";
+    hamburger.style.display = "block";
 }
+
 
 
 // Script for the form
@@ -85,7 +94,7 @@ const msg = document.getElementById("msg");
 
 form.addEventListener('submit', e => {
     e.preventDefault();
-    
+
     const startTime = Date.now();
     console.log("Form submission started");
 
@@ -93,7 +102,7 @@ form.addEventListener('submit', e => {
         .then(response => {
             const endTime = Date.now();
             console.log(`Form submission completed in ${endTime - startTime}ms`);
-            
+
             msg.innerHTML = "Message Sent Successfully";
             setTimeout(() => {
                 msg.innerHTML = "";
