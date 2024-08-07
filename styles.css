@@ -689,7 +689,7 @@ nav .fas {
 
     /* role setting */
     .header-text {
-        padding-top: 0%;
+        padding-top: 100%;
         gap: 1rem;
     }
 
