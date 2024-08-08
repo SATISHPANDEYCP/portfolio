@@ -697,6 +697,35 @@ nav .fas {
         background-image: url(./images/mobile\ backgrounds.png);
     }
 
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: rgba(38, 38, 38, 0.8);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        /* transition for hambergermenu */
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
 
     .header-text {
         padding-top: 20%;
