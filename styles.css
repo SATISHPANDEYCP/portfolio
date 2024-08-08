@@ -462,35 +462,35 @@ button .fa-solid.fa-link {
 
 
 
-/* --------------------------------------Contect--------------------------------------------- */
-.contect-left {
+/* --------------------------------------Contact--------------------------------------------- */
+.Contact-left {
     flex-basis: 35%;
 
 }
 
-.contect-left p {
+.Contact-left p {
     margin-top: 30px;
 }
 
-.contect-left p i {
+.Contact-left p i {
     color: #ff004f;
     margin-right: 15px;
     font-size: 25px;
     transition: 0.5s;
 }
 
-.contect-left p a {
+.Contact-left p a {
     color: #fff;
     text-decoration: none;
     transition: 0.5s;
 }
 
-.contect-left p a:hover {
+.Contact-left p a:hover {
     color: #ff004f;
     text-decoration: none;
 }
 
-.contect-left p a:hover i {
+.Contact-left p a:hover i {
     color: #fff;
     text-decoration: none;
 }
@@ -518,12 +518,12 @@ button .fa-solid.fa-link {
     background: #ff004f;
 }
 
-.contect-right {
+.Contact-right {
     flex-basis: 60%;
 
 }
 
-.contect-right form {
+.Contact-right form {
     width: 100%;
 }
 
@@ -642,8 +642,8 @@ nav .fas {
         margin-right: 20px;
     }
 
-    .contect-left,
-    .contect-right {
+    .Contact-left,
+    .Contact-right {
         flex-basis: 100%;
     }
 
