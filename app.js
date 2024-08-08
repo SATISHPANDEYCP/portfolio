@@ -63,25 +63,7 @@ function opentab(tabname) {
     document.getElementById(tabname).classList.add("active-tab");
 }
 
-// For hamberger button
-// var sidemenu = document.getElementById("side-menu");
-// var hamburger = document.getElementById("hamburger");
-
-// hamburger.addEventListener("click", openmenu);
-// closeIcon.addEventListener("click", closemenu);
-
-// function openmenu() {
-//     sidemenu.style.right = "0";
-//     hamburger.style.display = "none";
-// }
-
-// function closemenu() {
-//     sidemenu.style.right = "-200px";
-//     hamburger.style.display = "block";
-// }
-
-
-
+// hamberger section
 document.addEventListener("DOMContentLoaded", function () {
     var hamburger = document.getElementById("hamburger");
     var closeIcon = document.getElementById("close");

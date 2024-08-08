@@ -6,6 +6,7 @@
 }
 
 /* to make scroll smooth when we click on nav   bar */
+
 html {
     scroll-behavior: smooth;
 }
@@ -73,7 +74,6 @@ nav ul li a:hover::after {
 }
 
 
-
 /* Role section */
 .header-text {
     display: flex;
@@ -109,7 +109,6 @@ nav ul li a:hover::after {
     font-weight: 500;
     font-size: 22px;
 }
-
 
 
 /* Hire me button */
@@ -149,6 +148,7 @@ nav ul li a:hover::after {
 .btn-pink:hover {
     transform: translateY(-3px);
     color: #262626;
+    box-shadow: 8px 8px 10px 0 #3f3f3f;
 
 }
 
@@ -172,8 +172,6 @@ nav ul li a:hover::after {
     font-weight: bold;
     transition: all 3s;
 }
-
-
 
 
 /* -----------------------about----------------------- */
@@ -274,7 +272,10 @@ nav ul li a:hover::after {
     display: block;
 }
 
+
+
 /* ----------------------------------projects---------------------------------------- */
+
 #projects {
     padding: 30px 0;
 }
@@ -572,12 +573,6 @@ nav .fas {
     margin-top: -10px;
     display: block;
 }
-
-
-
-
-
-
 
 
 /* --------------------------CSS for small screen----------------------------- */
