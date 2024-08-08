@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/fav.png">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3232bbb943.js" crossorigin="anonymous"></script>
+
+    <!-- Include Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Include Font Awesome (optional, if needed for icons) -->
+    <script src="https://kit.fontawesome.com/5a8810656e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo.png" class="logo">
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#portfolio">Internships</a></li>
+                    <li><a href="#contect">Contect Us</a></li>
+                    <i id="close" class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i id="hamburger" class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+
+            <div class="header-text">
+
+                <div class="header-text-heading">Hi! <span class="span-red">Satish Pandey</span></div>
+                <div class="header-text-heading header-text-sub-heading">I am a <span class="role"></span> </div>
+                <div class="header-text-description">I'm a software developer and here is my portfolio website.
+                    <br>Here you'll learn about my journey as <br>a software developer.
+                </div>
+
+                <a href="../form/rForm.html">
+                    <div class="btn-pink" id="bt">Hire Me</div>
+                </a>
+
+                <div class="faded-text">SATISH PANDEY</div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- --------------------about------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Abou<Span class="span-red">t</Span> me</h1>
+                    <p id="About-para">Hallo! I'm <b style="color: #ff004f;">Satish Pandey</b>, a passionate and
+                        creative web developer and designer
+                        based in Gorakhpur. With a strong foundation in front-end and back-end technologies, I strive to
+                        craft visually stunning and functional websites that leave a lasting impression. My journey into
+                        the world of web development began last year, and since then, I've delved deep into languages
+                        and frameworks such as HTML, CSS, JavaScript, React, and Node.js. I've been honing my skills to
+                        bring ideas to life.
+
+                        My approach blends a keen eye for design with a focus on user experience, ensuring that every
+                        project I undertake not only looks great but also functions seamlessly across various devices.
+                        When I'm not coding, you'll often find me exploring new design trends, learning about emerging
+                        technologies, or collaborating on exciting projects that challenge me to grow both personally
+                        and professionally.
+                    </p>
+                    <div class="tab-tittle">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Achivements')">Achievements</p>
+                        <p class="tab-links" onclick="opentab('Interests')">Interests</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Learning and exploring web app development using the MERN
+                                stack</li>
+                            <li><span>Passionate Coder</span><br>Exploring coding with C, C++, and Java</li>
+                            <li><span>Other Skills</span><br>C, C++, DSA, STL, JAVA, JavaScript, PHP, SQL, Linux, Git
+                                and GitHub
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Year 2017</span><br>Completed 10th Class</li>
+                            <li><span>Year 2019</span><br>Completed 12th Class</li>
+                            <li><span>Year 2019-2022</span><br>Bachelor of Science (BSc)</li>
+                            <li><span>Year 2023-2025</span><br>Master of Computer Applications (MCA)</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Achivements">
+                        <ul>
+                            <li><span>C Language</span><br>5-Star Rating on HackerRank</li>
+                            <li><span>C++ Language</span><br>5-Star Rating on HackerRank</li>
+                            <li><span>Web Development</span><br>CSS and JavaScript Certificates from HackerRank</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="Interests">
+                        <ul>
+                            <li><span>Coding</span><br>Exploring C, C++, and Java</li>
+                            <li><span>Web Development</span><br>Using the MERN stack</li>
+                            <li><span>Photography</span><br>Natural Photography</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------projects--------------------------------------- -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My <span class="span-red">P</span>rojects</h1>
+            <div class="project-list">
+                <!-- First Project -->
+                <div>
+                    <span class="icons-red"><i class="fa-solid fa-1"></i></span>
+                    <h2>My Portfolio Page</h2>
+                    <p style="font-size: 22px;"><b>Technology Used:</b></p>
+                    <span>
+                        <br>
+                        <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-js"></i><i class="fa-brands fa-git"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </span><br>
+                    <p class="project-role-1"></p><br>
+                    <a href="https://satishpandeycp.github.io/portfolio/"><Button class="btn pbtn"><b>Project link <i
+                                    class="fa-solid fa-link"></i></b></Button></a>
+                </div>
+
+                <!-- Second Project -->
+                <div>
+                    <span class="icons-red"><i class="fa-solid fa-2"></i></span>
+                    <h2>Simon Says Game</h2>
+                    <p style="font-size: 22px;"><b>Technology Used:</b></p>
+                    <span>
+                        <br>
+                        <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-js"></i><i class="fa-brands fa-git"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </span><br>
+                    <p class="project-role-2"></p><br>
+                    <a href="https://satishpandeycp.github.io/Simon-Game/"><Button class="btn pbtn"><b>Project link <i
+                                    class="fa-solid fa-link"></i></b></Button></a>
+                </div>
+                <!-- third project -->
+                <div>
+                    <span class="icons-red"><i class="fa-solid fa-3"></i></span>
+                    <h2>Pet Adoption Page</h2>
+                    <p style="font-size: 22px;"><b>Technology Used:</b></p>
+                    <span>
+                        <br>
+                        <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-js"></i><i class="fa-brands fa-git"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </span><br>
+                    <p class="project-role-3"></p><br>
+                    <a href="https://satishpandeycp.github.io/pet_adopt_page/"><Button class="btn pbtn"><b>Project link
+                                <i class="fa-solid fa-link"></i></b></Button></a>
+                </div>
+
+            </div>
+            <a href="https://github.com/satishpandeycp/" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------Internship And work------------------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"><span class="span-red">Intern</span>ship and Work Experience</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3><span class="span-red">P</span>lacify Techonology</h3>
+                        <p>During my internship, I contributed to building complete web solutions. On the front-end, I
+                            crafted user interfaces using HTML, CSS, and JavaScript. Simultaneously, I delved into
+                            server-side technologies, handling databases, APIs, and server logic. My role encompassed
+                            the entire web development stack, providing me with a holistic understanding of creating
+                            robust applications. 🌐🚀</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Easy <span class="span-red">Bytes</span> Infotech</h3>
+                        <p>During my internship, I actively contributed to Java development projects. I worked with Java
+                            (specifically Java 8) and gained hands-on experience with frameworks like Spring and
+                            Hibernate. My responsibilities included backend development, database management, and
+                            optimizing code for performance. It was a valuable learning experience, and I’m proud of the
+                            impact I made during my time at EasyBytes Infotech! 🌐🚀</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Cognify <span class="span-red">tech</span>nologies</h3>
+                        <p>During my internship, I actively contributed to full-stack development projects. I worked
+                            with JavaScript, Node.js, and databases (including MySQL and MongoDB). On the front-end, I
+                            utilized React to build user interfaces, while on the back-end, I focused on RESTful APIs
+                            and server logic. My role spanned the entire stack, allowing me to gain a holistic
+                            understanding of creating robust web applications. It was an enriching experience, and I’m
+                            proud of the impact I made during my time at COGNIFYZ! 🌐🚀</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+
+    <!-- --------------------------------------Contect--------------------------------------------- -->
+    <div id="contect">
+        <div class="container">
+            <div class="row">
+                <div class="contect-left">
+                    <h1 class="sub-title">contact <span class="span-red">M</span>e</h1>
+                    <p>
+                        <a href="mailto:satishpandeycp@gmail.com">
+                            <i class="fa-solid fa-envelope"></i> satishpandeycp@gmail.com
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="tel:9451405261" style="text-decoration: none;">
+                            <i class="fa-solid fa-phone"></i>+91 9451408951
+                        </a>
+                    </p>
+
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/satishpandeycp/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/SATISHPANDEYCP"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/satishpandeycp/"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/@thecreatorstutorial"><i class="fa-brands fa-youtube"></i></a>
+
+                    </div>
+                    <a href="https://drive.google.com/file/d/1NRyBl-bP8ogxKF38CPoXrSHDv6bOX1H0/view?usp=drive_link"
+                        class="btn btn2">Download Resume <i class="fa-solid fa-download"></i></a>
+                </div>
+                <div class="contect-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="Email" placeholder="Enter Your Email" required>
+                        <input type="tel" name="Mobile_Number" placeholder="Enter your Mobile Number" required>
+                        <textarea name="Message" rows="5" placeholder="Enter You Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="faded-texts">SATISH PANDEY</div>
+    </div>
+    <footer>
+
+        <p>Copyright © <b>Satish Pandey</b>. All Rights Reserved.</p>
+    </footer>
+
+    <!-- script -->
+    <script src="app.js"></script>
+</body>
+
+</html>

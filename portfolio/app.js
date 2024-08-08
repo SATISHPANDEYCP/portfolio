@@ -48,11 +48,6 @@ var typed = new Typed('.project-role-3', {
 });
 
 
-
-
-
-
-
 //js for about section
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
@@ -69,21 +64,43 @@ function opentab(tabname) {
 }
 
 // For hamberger button
-var sidemenu = document.getElementById("side-menu");
-var hamburger = document.getElementById("hamburger");
+// var sidemenu = document.getElementById("side-menu");
+// var hamburger = document.getElementById("hamburger");
 
-hamburger.addEventListener("click", openmenu);
-closeIcon.addEventListener("click", closemenu);
+// hamburger.addEventListener("click", openmenu);
+// closeIcon.addEventListener("click", closemenu);
 
-function openmenu() {
-    sidemenu.style.right = "0";
-    hamburger.style.display = "none";
-}
+// function openmenu() {
+//     sidemenu.style.right = "0";
+//     hamburger.style.display = "none";
+// }
 
-function closemenu() {
-    sidemenu.style.right = "-200px";
-    hamburger.style.display = "block";
-}
+// function closemenu() {
+//     sidemenu.style.right = "-200px";
+//     hamburger.style.display = "block";
+// }
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var hamburger = document.getElementById("hamburger");
+    var closeIcon = document.getElementById("close");
+    var sidemenu = document.getElementById("side-menu");
+
+    hamburger.addEventListener("click", openmenu);
+    closeIcon.addEventListener("click", closemenu);
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+        hamburger.style.display = "none";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+        hamburger.style.display = "block";
+    }
+});
+
 
 
 
@@ -114,7 +131,3 @@ form.addEventListener('submit', e => {
             console.error('Error!', error.message);
         });
 });
-
-
-
-

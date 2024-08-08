@@ -18,7 +18,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(./images/backgroundss.png);
+    background-image: url(./images/backgrounds.png);
     background-size: cover;
     background-position: center;
 }
@@ -74,10 +74,7 @@ nav ul li a:hover::after {
 
 
 
-
-
-
-
+/* Role section */
 .header-text {
     display: flex;
     flex-direction: column;
@@ -149,13 +146,11 @@ nav ul li a:hover::after {
     transform: scale(1);
 }
 
-
 .btn-pink:hover {
     transform: translateY(-3px);
     color: #262626;
 
 }
-
 
 .faded-text {
     user-select: none;
@@ -169,42 +164,14 @@ nav ul li a:hover::after {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Bottm unselected text */
+.faded-texts {
+    user-select: none;
+    font-size: 4.5em;
+    color: #262626;
+    font-weight: bold;
+    transition: all 3s;
+}
 
 
 
@@ -233,13 +200,11 @@ nav ul li a:hover::after {
     border-radius: 15px;
     display: block;
     transition: 0.8s;
-    /* border: 1px solid #ff004f; */
 }
 
 .about-col-1 img:hover {
     transform: scale(1.05);
     filter: grayscale(0.6);
-    /* border: 1px solid #ff004f; */
 }
 
 .about-col-2 {
@@ -385,8 +350,6 @@ button .fa-solid.fa-link {
 }
 
 .project-list div h3 {
-    /* font-size: 18px;
-    font-weight: 400; */
     margin-bottom: 0px;
 }
 
@@ -570,7 +533,6 @@ form textarea {
     font-size: 18px;
     border-radius: 6px;
     resize: none;
-    /* border: 1px solid #ff004f; */
 }
 
 form .btn2 {
@@ -604,7 +566,6 @@ nav .fas {
     display: none;
 }
 
-
 /* For message after submit form */
 #msg {
     color: #61b752;
@@ -613,11 +574,18 @@ nav .fas {
 }
 
 
+
+
+
+
+
+
 /* --------------------------CSS for small screen----------------------------- */
 @media only screen and (max-width:600px) {
     #header {
-        background-image: url(./images/mobile\ background.png);
+        background-image: url(./images/mobile\ backgrounds.png);
     }
+
     nav .fas {
         display: block;
         font-size: 25px;
@@ -628,7 +596,6 @@ nav .fas {
         position: fixed;
         top: 0;
         right: -200px;
-        /* We set right is -200 because width is 200 */
         width: 200px;
         height: 100vh;
         padding-top: 50px;
@@ -685,11 +652,9 @@ nav .fas {
     }
 
 
-
-
     /* role setting */
     .header-text {
-        padding-top: 100%;
+        padding-top: 80%;
         gap: 1rem;
     }
 
@@ -716,21 +681,23 @@ nav .fas {
 
     .faded-text {
         font-size: 2em;
-      
+    }
+
+    /* Bottm unselected text */
+    .faded-texts {
+        font-size: 2.5em;
     }
 }
 
 
-
-
-/* -------------------Media for tab mini-------------- */
+/* -------------------Media for tab-------------- */
 
 @media only screen and (min-width: 601px) and (max-width: 800px) {
     #header {
-        background-image: url(./images/mobile\ background.png);
+        background-image: url(./images/mobile\ backgrounds.png);
     }
 
-   
+
     .header-text {
         padding-top: 20%;
         gap: 1rem;
@@ -757,37 +724,10 @@ nav .fas {
         font-size: 18px;
     }
 
-    
+
     .faded-text {
         font-size: 4em;
         margin-bottom: 15%;
     }
 
 }
-
-/* --------------------------------------apple tabs-----------------------------
-
-@media only screen and (min-width: 801px) and (max-width: 1100px) {
-    #header {
-        background-image: url(./images/mobile\ background.png);
-    }
-    .header-text {
-        margin-top: 10%;
-        font-size: 16px;
-    }
-
-    .header-text h1 {
-        font-size: 30px;
-    }
-
-    .header-text {
-        padding-top: 60%;
-        gap: 1rem;
-    }
-    
-    .faded-text {
-        font-size: 4em;
-        margin-bottom: 15%;
-    }
-
-} */
